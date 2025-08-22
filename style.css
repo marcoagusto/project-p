@@ -1,0 +1,52 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fce7f3; /* Light Pink Background */
+    color: #ec4899; /* Deep Pink Text */
+    overflow-x: hidden; /* Prevent horizontal scrolling due to heart animations */
+}
+
+.falling-heart {
+    position: absolute;
+    top: -20px; /* Start above the viewport */
+    font-size: 2rem;
+    color: #fda4af; /* Lighter Pink Heart */
+    animation: fall linear infinite;
+    pointer-events: none; /* Allow interaction with elements behind hearts */
+    z-index: 0;
+    user-select: none; /* Prevent text selection */
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.quote-box {
+    min-height: 8rem; /* Ensure consistent height for quotes */
+}
+
+/* Responsive styling for the main container */
+.container {
+    max-width: 90% - 4rem;
+}
+@media (min-width: 640px) { /* sm breakpoint */
+    .container {
+        max-width: 80%;
+    }
+}
+@media (min-width: 768px) { /* md breakpoint */
+    .container {
+        max-width: 70%;
+    }
+}
+@media (min-width: 1024px) { /* lg breakpoint */
+    .container {
+        max-width: 60%;
+    }
+}

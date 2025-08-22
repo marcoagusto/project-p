@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Love Story</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="flex flex-col items-center justify-center min-h-screen p-4 md:p-8 relative"
+  >
+    <div
+      id="heart-container"
+      class="absolute inset-0 overflow-hidden pointer-events-none z-0"
+    ></div>
+
+    <audio
+      id="bg-music"
+      src="https://docs.google.com/uc?export=download&id=1JrSDvXpJa0a5ZrhBdlTae1bEMkCDxFmK"
+      loop
+    ></audio>
+
+    <main
+      class="relative z-10 bg-white bg-opacity-80 p-8 md:p-12 rounded-3xl shadow-xl text-center border-4 border-pink-200 mx-40"
+    >
+      <h1
+        class="text-5xl md:text-6xl font-extrabold mb-6 text-red-500 tracking-wide leading-tight"
+      >
+        Our Love Story: Unlimited
+      </h1>
+      <p class="text-lg md:text-xl mb-8 text-pink-600">
+        You are my heartbeat, the star in my night sky, and the reason for my
+        smile every day. With you, I found the home I was always searching for,
+        a place where love never fades.
+      </p>
+
+      <div
+        id="quote-display"
+        class="quote-box bg-pink-100 text-pink-700 p-6 rounded-xl italic mb-8 shadow-inner transition-all duration-500 ease-in-out flex items-center justify-center"
+      >
+        To love is nothing. To be loved is something. But to love and be loved,
+        that’s everything
+      </div>
+
+      <button
+        id="loveButton"
+        class="bg-red-400 hover:bg-red-500 text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition-transform duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-4 focus:ring-red-300 active:bg-red-600 flex items-center justify-center mx-auto"
+      >
+        <svg class="w-6 h-6 mr-2 fill-current" viewBox="0 0 24 24">
+          <path
+            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+          />
+        </svg>
+        Open My Heart's Message
+      </button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
